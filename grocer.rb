@@ -35,7 +35,7 @@ end
 def apply_clearance(cart)
   # code here
   cart.each do |discount|
-    discount.each do 
+   if discount[:clearance]  === true
       
     
     
