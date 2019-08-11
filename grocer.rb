@@ -32,15 +32,14 @@ def apply_coupons(cart, coupons)
   cart
 end
 
-'def apply_clearance(cart)
+def apply_clearance(cart)
   # code here
-  cart.each do |discount|
+  cart.each { |discount|
    if discount[:clearance]  === true
      discount[:price] = (discount[price]*.8).round(2)
-    end
-    end
+  }
   cart  
-end'
+end
 
 def checkout(cart, coupons)
   # code here
