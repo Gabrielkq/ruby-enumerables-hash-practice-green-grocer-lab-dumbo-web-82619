@@ -38,7 +38,7 @@ def apply_clearance(cart)
    discount[:clearance] ?
       discount[:price] = (discount[:price] *
       0.8).round(2) 
-    end 
+     
   end 
 cart 
 end
