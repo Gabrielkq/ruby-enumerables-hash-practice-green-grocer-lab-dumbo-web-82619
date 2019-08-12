@@ -49,5 +49,10 @@ def checkout(cart, coupons)
   new_cart = apply_coupons(new_cart, coupons) 
   new_cart = apply_clearance(new_cart)
   
+   new_cart.each do |item, totaldisc| 
+    total += (totaldisc[:price] * totaldisc[:count])
+  end 
+total = (total * 0.9).round(2) if total > 100 total 
+
   
 end
