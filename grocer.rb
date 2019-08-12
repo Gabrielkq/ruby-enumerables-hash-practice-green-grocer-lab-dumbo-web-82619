@@ -44,26 +44,12 @@ cart
 end
 
 
-def checkout(cart, coupons) 
-  total = 0 
-  new_cart = consolidate_cart(cart) 
-  coupon_cart = apply_coupons(new_cart, coupons) 
-  clearance_cart = apply_clearance(coupon_cart) 
-  clearance_cart.each do |item, attribute_hash| 
-    total += (attribute_hash[:price] * attribute_hash[:count])
-  end 
-total = (total * 0.9) if total > 100 total 
-end
 
 
 
 
 
-
-
-
-
-'def checkout(cart, coupons)
+def checkout(cart, coupons)
   total = 0 
   consolidated = consolidate_cart(cart)
   couponed = apply_coupons(consolidated, coupons) 
@@ -72,7 +58,7 @@ end
    clearanced.each do |item, totaldisc| 
     total += (totaldisc[:price] * totaldisc[:count])
   end 
-total = (total * 0.9).round(2) if total > 100 total 
+  if total > 100 total 
 
   
-end'
+end
