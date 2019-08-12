@@ -43,7 +43,7 @@ def apply_clearance(cart)
 cart 
 end
 
-def checkout(cart, coupons)
+'def checkout(cart, coupons)
   total = 0 
   consolidated = consolidate_cart(cart)
   couponed = apply_coupons(consolidated, coupons) 
@@ -55,4 +55,4 @@ def checkout(cart, coupons)
 total = (total * 0.9).round(2) if total > 100 total 
 
   
-end
+end'
