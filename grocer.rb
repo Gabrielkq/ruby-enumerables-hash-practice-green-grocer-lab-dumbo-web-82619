@@ -48,7 +48,7 @@ def checkout(cart, coupons)
   consolidated = consolidate_cart(cart)
   couponed = apply_coupons(consolidated, coupons) 
   clearanced = apply_clearance(couponed)
-  clearance_cart.each do |item, disc| 
+  clearanced.each do |item, disc| 
     total += (disc[:price] * disc[:count])
   end 
  total > 100 ? (total *0.9).round(2) : total*1
