@@ -49,7 +49,7 @@ end
 
 
 
-def checkout(cart, coupons)
+'def checkout(cart, coupons)
   total = 0 
   consolidated = consolidate_cart(cart)
   couponed = apply_coupons(consolidated, coupons) 
@@ -61,4 +61,4 @@ def checkout(cart, coupons)
    total > 100 ? total *0.9 : total*1
 
   total
-end
+end'
