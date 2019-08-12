@@ -58,7 +58,7 @@ def checkout(cart, coupons)
    clearanced.each do |item, totaldisc| 
     total += (totaldisc[:price] * totaldisc[:count])
   end 
-  if total > 100 total 
+   total > 100 total 
 
   
 end
