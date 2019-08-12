@@ -47,5 +47,7 @@ def checkout(cart, coupons)
   total = 0 
   new_cart = consolidate_cart(cart)
   new_cart = apply_coupons(new_cart, coupons) 
-  new_cart = 
+  new_cart = apply_clearance(new_cart)
+  
+  
 end
