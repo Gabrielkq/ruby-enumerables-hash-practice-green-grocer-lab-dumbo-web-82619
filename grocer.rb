@@ -44,7 +44,7 @@ cart
 end
 
 def checkout(cart, coupons)
-  # code here
+  total_cart
 end
 
 'def apply_coupons(cart, coupons)
